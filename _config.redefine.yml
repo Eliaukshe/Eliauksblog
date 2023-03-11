@@ -53,7 +53,7 @@ style:
     title_color:
       light: "#fff" # first screen title color (light mode)
       dark: "#d1d1b6" # first screen title color (dark mode)
-    description: 昔我往矣，杨柳依依 # the title in the middle of the first screen. HTML supported (e.g. svg html code of your logo)
+    description: 今我来思 雨雪霏霏 # the title in the middle of the first screen. HTML supported (e.g. svg html code of your logo)
     custom_font: # custom font for the first screen
       enable: false
       font_family: # the font family name of the url below
@@ -86,6 +86,12 @@ menu: #you can customize, i18n files are in the theme's languages folder. fa-reg
   Home: 
     path: / 
     icon: fa-regular fa-house # can be empty
+  Archives: 
+    path: /archives
+    icon: fa-regular fa-house # can be empty
+  Playlist: 
+    path: /playlist
+    icon: fa-regular fa-house # can be empty  
   # Archives: 
   #   path: /archives 
   #   icon: fa-regular fa-archive # can be empty
@@ -198,13 +204,13 @@ local_search:
 # Comment plugin
 # ---------------------------------------------------------------------------------------
 comment:
-  enable: ture
+  enable: flase
   use: waline # values: waline | gitalk | twikoo
 
   # Waline
   # See: https://waline.js.org/guide/get-started.html
   waline:
-    serverUrl: https://eliaukshecomment-2ytygtus3-zakiiiis.vercel.app/ # Waline server url(vercel) example: https://example.example.com
+    serverUrl:  # Waline server url(vercel) example: https://example.example.com
     lang: zh-CN # Waline language, default: zh-CN. See: https://waline.js.org/guide/client/i18n.html
   
   # Gitalk
@@ -218,7 +224,7 @@ comment:
   # Twikoo
   # See: https://github.com/imaegoo/twikoo
   twikoo:
-    visitor: false
+    visitor: true 
     version: 1.6.10 # Twikoo version, do not modify if you dont know what it is
     env_id: # Vercel or Tencent Cloud Function environment ID
     region: # environment region. If select Guangzhou, fill in "ap-guangzhou". (optional)
