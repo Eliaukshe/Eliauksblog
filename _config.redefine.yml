@@ -198,13 +198,13 @@ local_search:
 # Comment plugin
 # ---------------------------------------------------------------------------------------
 comment:
-  enable: false
+  enable: ture
   use: waline # values: waline | gitalk | twikoo
 
   # Waline
   # See: https://waline.js.org/guide/get-started.html
   waline:
-    serverUrl:  # Waline server url(vercel) example: https://example.example.com
+    serverUrl: https://eliaukshecomment-2ytygtus3-zakiiiis.vercel.app/ # Waline server url(vercel) example: https://example.example.com
     lang: zh-CN # Waline language, default: zh-CN. See: https://waline.js.org/guide/client/i18n.html
   
   # Gitalk
@@ -218,7 +218,7 @@ comment:
   # Twikoo
   # See: https://github.com/imaegoo/twikoo
   twikoo:
-    visitor: true
+    visitor: false
     version: 1.6.10 # Twikoo version, do not modify if you dont know what it is
     env_id: # Vercel or Tencent Cloud Function environment ID
     region: # environment region. If select Guangzhou, fill in "ap-guangzhou". (optional)
