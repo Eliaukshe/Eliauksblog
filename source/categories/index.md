@@ -1,9 +1,5 @@
 ---
-title: artchives
+title: categories
 date: 2023-03-12 00:52:35
-comment: true
+comment: false
 ---
-
-# artchives
-
-<div style="color: red;">artchives</div>

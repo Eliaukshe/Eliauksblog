@@ -92,9 +92,9 @@ menu: #you can customize, i18n files are in the theme's languages folder. fa-reg
   Essays: 
     path: /essays
     icon: fa-regular fa-pen-nib # can be empty
-  Playlist: 
-    path: /none
-    icon: fa-regular fa-music # can be empty  
+  Categories: 
+    path: /categories
+    icon: fa-regular fa-list # can be empty  
   # Archives: 
   #   path: /archives 
   #   icon: fa-regular fa-archive # can be empty
