@@ -48,8 +48,8 @@ style:
   first_screen:
     enable: true
     background_image:
-      light: /images/wallhaven-wqery6-light.webp # background image of the first screen, use relative path or external link (if your website is in subdirectory, use external link)
-      dark: /images/wallhaven-wqery6-dark.webp # background image of the first screen, use relative path or external link (if your website is in subdirectory, use external link)
+      light: /images/ligntower.webp # background image of the first screen, use relative path or external link (if your website is in subdirectory, use external link)
+      dark: /images/lightmountains.webp # background image of the first screen, use relative path or external link (if your website is in subdirectory, use external link)
     title_color:
       light: "#fff" # first screen title color (light mode)
       dark: "#d1d1b6" # first screen title color (dark mode)
@@ -88,10 +88,13 @@ menu: #you can customize, i18n files are in the theme's languages folder. fa-reg
     icon: fa-regular fa-house # can be empty
   Archives: 
     path: /archives
-    icon: fa-regular fa-house # can be empty
+    icon: fa-regular fa-box # can be empty
+  Essays: 
+    path: /essays
+    icon: fa-regular fa-pen-nib # can be empty
   Playlist: 
-    path: /playlist
-    icon: fa-regular fa-house # can be empty  
+    path: /none
+    icon: fa-regular fa-music # can be empty  
   # Archives: 
   #   path: /archives 
   #   icon: fa-regular fa-archive # can be empty
