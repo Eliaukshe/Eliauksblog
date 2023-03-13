@@ -51,12 +51,12 @@ style:
       light: /images/ligntower.webp # background image of the first screen, use relative path or external link (if your website is in subdirectory, use external link)
       dark: /images/lightmountains.webp # background image of the first screen, use relative path or external link (if your website is in subdirectory, use external link)
     title_color:
-      light: "#fff" # first screen title color (light mode)
+      light: "#1A3C62" # first screen title color (light mode)
       dark: "#d1d1b6" # first screen title color (dark mode)
     description: 今我来思 雨雪霏霏 # the title in the middle of the first screen. HTML supported (e.g. svg html code of your logo)
     custom_font: # custom font for the first screen
-      enable: false
-      font_family: # the font family name of the url below
+      enable: true
+      font_family: KaiTi # the font family name of the url below
       font_url:  # The url to the font file
 
   # Scroll style settings
@@ -70,13 +70,11 @@ style:
 # Social contact link
 # ---------------------------------------------------------------------------------------
 social_contact: # social contact icons in the first screen, you can add more by using fontawesome icon names
-  enable: false 
+  enable: true
   links:
-    github:  # your GitHub URL
-    instagram: # your Instagram URL
-    zhihu:  # your ZhiHu URL
-    twitter:  # your twitter URL
-    email:  # your email
+    bilibili: https://space.bilibili.com/205507260 # your GitHub URL
+    instagram: https://instagram.com/heiszaki?igshid=YmMyMTA2M2Y=  # your Instagram URL
+    email: ZakiShe@outlook.com # your email
     # ...... # you can add more
 
 # ---------------------------------------------------------------------------------------
@@ -89,7 +87,7 @@ menu: #you can customize, i18n files are in the theme's languages folder. fa-reg
   Archives: 
     path: /archives
     icon: fa-regular fa-box # can be empty
-  Essays: 
+  随笔: 
     path: /essays
     icon: fa-regular fa-pen-nib # can be empty
   Categories: 
