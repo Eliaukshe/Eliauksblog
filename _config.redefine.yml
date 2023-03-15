@@ -16,10 +16,10 @@ style:
   primary_color: "#005080"
 
   # Avatar (You can use local image or image external link)
-  avatar: /images/yin-yang.svg # avatar of the author
+  avatar: /images/featherone.svg # avatar of the author
 
   # Favicon (You can use local image or image external link)
-  favicon: /images/yin-yang.svg # favicon of the site
+  favicon: /images/feather.svg # favicon of the site
   og_image: # og:image of the site
     enable: false
     image_url: # image url
@@ -48,8 +48,8 @@ style:
   first_screen:
     enable: true
     background_image:
-      light: /images/ligntower.webp # background image of the first screen, use relative path or external link (if your website is in subdirectory, use external link)
-      dark: /images/lightmountains.webp # background image of the first screen, use relative path or external link (if your website is in subdirectory, use external link)
+      light: /images/sea-bright.webp # background image of the first screen, use relative path or external link (if your website is in subdirectory, use external link)
+      dark: /images/sea-night.webp # background image of the first screen, use relative path or external link (if your website is in subdirectory, use external link)
     title_color:
       light: "#1A3C62" # first screen title color (light mode)
       dark: "#d1d1b6" # first screen title color (dark mode)
@@ -143,10 +143,10 @@ post:
 
   # Author label
   author_label:
-    enable: true
+    enable: flase
     auto: false # if true, show Lv1, Lv2, Lv3... , If false, show custom label
     # label array item can be one or more
-    custom_label_list: ["lol"]
+    custom_label_list: []
 
 # ---------------------------------------------------------------------------------------
 # Code copy
@@ -198,7 +198,7 @@ website_count:
 # See: https://github.com/theme-next/hexo-generator-searchdb
 # ---------------------------------------------------------------------------------------
 local_search:
-  enable: false
+  enable: ture
   preload: true # Preload the search data when the page loads
 
 # ---------------------------------------------------------------------------------------
@@ -242,7 +242,7 @@ friend_links:
 # See: https://github.com/hexojs/hexo-generator-feed
 # ---------------------------------------------------------------------------------------
 rss:
-  enable: false
+  enable: ture
 
 # ---------------------------------------------------------------------------------------
 # Lazyload image
@@ -329,7 +329,19 @@ plugins:
         artist: 
         url: 
         cover: 
-
+# Search
+## See: https://github.com/theme-next/hexo-generator-searchdb
+search:
+  path: search.json
+  field: post
+  content: true
+  format: striptags
+# Feed Atom
+# npm install hexo-generator-feed
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
 # ---------------------------------------------------------------------------------------
 # Redefine Theme version (Please dont modify it)
 # Please go to github to update the latest version frequently
