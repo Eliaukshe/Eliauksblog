@@ -198,8 +198,15 @@ website_count:
 # See: https://github.com/theme-next/hexo-generator-searchdb
 # ---------------------------------------------------------------------------------------
 local_search:
-  enable: ture
-  preload: true # Preload the search data when the page loads
+  enable: flase
+  preload: flase # Preload the search data when the page loads
+search:
+  path: search.json
+  field: post
+  content: ture
+  format: striptags
+# Feed Atom
+# npm install hexo-generator-feed
 
 # ---------------------------------------------------------------------------------------
 # Comment plugin
@@ -331,13 +338,7 @@ plugins:
         cover: 
 # Search
 ## See: https://github.com/theme-next/hexo-generator-searchdb
-search:
-  path: search.json
-  field: post
-  content: true
-  format: striptags
-# Feed Atom
-# npm install hexo-generator-feed
+
 feed:
   type: atom
   path: atom.xml
