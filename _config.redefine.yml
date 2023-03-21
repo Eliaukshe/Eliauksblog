@@ -67,6 +67,25 @@ style:
       enable: false
 
 # ---------------------------------------------------------------------------------------
+# Custom Settings
+# ---------------------------------------------------------------------------------------
+custom:
+  font: # custom font for the whole site
+    chinese: # custom font for Chinese
+      enable: false
+      font_family:  # the font family name of the url below
+      font_url:  # The url to the font stylesheet file (css)
+    english: # custom font for English
+      enable: false
+      font_family:  # the font family name of the url below
+      font_url:  # The url to the font stylesheet file (css)
+  formats: # custom font styles for the whole site
+    font_size: 16px # font size
+    line_height: 1.5 # line height
+
+
+
+# ---------------------------------------------------------------------------------------
 # Social contact link
 # ---------------------------------------------------------------------------------------
 social_contact: # social contact icons in the first screen, you can add more by using fontawesome icon names
@@ -212,27 +231,29 @@ search:
 # Comment plugin
 # ---------------------------------------------------------------------------------------
 comment:
-  enable: flase
+  enable: false
   use: waline # values: waline | gitalk | twikoo
 
   # Waline
   # See: https://waline.js.org/guide/get-started.html
   waline:
-    serverUrl:  # Waline server url(vercel) example: https://example.example.com
+    appid: FemugRSZgOGABc25fQmSYCoL-MdYXbMMI
+    appkey: 3IlLuSIxVUkya4aFdx632vqu
+    serverUrl: https://comment-psi-three.vercel.app/ # Waline server url(vercel) example: https://example.example.com
     lang: zh-CN # Waline language, default: zh-CN. See: https://waline.js.org/guide/client/i18n.html
   
   # Gitalk
   # See: https://github.com/gitalk/gitalk
   gitalk:
-    github_id: # GitHub repo owner
-    repository: # Repository name to store issues
-    client_id: # GitHub Application Client ID
-    client_secret: # GitHub Application Client Secret
+    github_id: Eliaukshe # GitHub repo owner
+    repository: blogsGitalk # Repository name to store issues
+    client_id: c2d0a7698241d315fc9c # GitHub Application Client ID
+    client_secret: 56996796d74b9c3cf5d9813fc3a2bd7bda62c45d # GitHub Application Client Secret
 
   # Twikoo
   # See: https://github.com/imaegoo/twikoo
   twikoo:
-    visitor: true 
+    visitor: flase 
     version: 1.6.10 # Twikoo version, do not modify if you dont know what it is
     env_id: # Vercel or Tencent Cloud Function environment ID
     region: # environment region. If select Guangzhou, fill in "ap-guangzhou". (optional)
@@ -242,6 +263,12 @@ comment:
 # ---------------------------------------------------------------------------------------
 friend_links:
   columns: 2 # number of columns. 2 or 3
+
+# ---------------------------------------------------------------------------------------
+# Tags Page
+# ---------------------------------------------------------------------------------------
+tags:
+  style: blur # blur | cloud
 
 # ---------------------------------------------------------------------------------------
 # RSS
@@ -302,6 +329,7 @@ fontawesome: # select fontawesome versions you want to use, in order to reduce t
 # ---------------------------------------------------------------------------------------
 footer:
   runtime: true # show website running time or not
+  icon: '<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>' # footer icon, write fontawesome html code here
   start_time: 2023/3/11 00:00:00 # the starting time of your website, format: yyyy/mm/dd hh:mm:ss
   customize: Good luck ~ # customize footer message, can be html code
   icp: # ICP record number of your website, Can be null
@@ -336,6 +364,9 @@ plugins:
         artist: 
         url: 
         cover: 
+  mermaid: # Mermaid JS
+    enable: false # enable mermaid or not
+    version: "9.3.0" # default v9.3.0
 # Search
 ## See: https://github.com/theme-next/hexo-generator-searchdb
 
@@ -350,4 +381,17 @@ feed:
 # ---------------------------------------------------------------------------------------
 
 all_minifier: true
-version: 1.2.0
+
+live2d:
+  enable: true
+  pluginModelPath: assets/
+  model:
+    use: live2d-widget-model-hijiki  #模板目录，在node_modules里
+  display:
+    position: left
+    width: 150 
+    height: 300
+  mobile:
+    show: false  #是否在手机进行显示
+    
+version: 1.2.3
