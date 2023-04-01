@@ -97,7 +97,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: butterfly
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -122,3 +122,21 @@ live2d:
 
 aplayer:
   asset_inject: false
+
+  # Artitalk
+  # see https://artitalk.js.org/
+  artitalk:
+    enable: true
+    appId: jFoJ5sjplmYhyl5z9Twu0bcH-MdYXbMMI
+    appKey: 9OJJReFSdL5nVdWJsL2QgLnC
+    path:
+    js:
+    option:
+      pageSize: 30
+    front_matter:
+
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
