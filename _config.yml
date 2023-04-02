@@ -4,7 +4,7 @@
 
 # Site
 title: 羽毛の兜兜转转
-subtitle: ''
+subtitle: '昔我往矣 杨柳依依'
 description: 想记录着世界的过客
 keywords:
 author: 是羽毛ya
@@ -96,6 +96,7 @@ ignore:
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
+plugins: hexo-generate-feed
 ## Themes: https://hexo.io/themes/
 theme: next
 
