@@ -15,6 +15,7 @@
     "aplayer": "^1.10.1",
     "dplayer": "^1.27.1",
     "hexo": "^6.3.0",
+    "hexo-asset-image": "^1.0.0",
     "hexo-butterfly-artitalk": "^1.0.4",
     "hexo-butterfly-hpptalk": "^1.0.4",
     "hexo-deployer-git": "^4.0.0",
