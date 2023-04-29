@@ -125,6 +125,7 @@ live2d:
     show: false  #是否在手机进行显示
 
 aplayer:
+  meting: true
   asset_inject: false
 
   # Artitalk
